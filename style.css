@@ -1,8 +1,8 @@
 body {
     margin: 0;
     font-family: 'Readex Pro', sans-serif;
-    color: aliceblue;
-    background-color: #001220;
+    color: #9D9D9D;
+    background-color: #F8F0DF;
 } 
 section {
     position: relative;
@@ -13,7 +13,15 @@ section {
     padding: 100px 20vw;
 }
 
-.wave {
+.section1 {
+    background-color: #F8F0DF;
+}
+
+.section2 {
+    background-color: #79B4B7;
+}
+
+.tiltTop {
     position: absolute;
     top: 0;
     left: 0;
@@ -22,37 +30,39 @@ section {
     line-height: 0;
 }
 
-.wave svg {
+.tiltTop svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 157px;
+    height: 111px;
 }
 
-.wave .shape-fill {
-    fill: #F7770F;
+.tiltTop .shape-fill {
+    fill: #79B4B7;
 }
 
-.wave2 {
+.pointLeft {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    transform: rotate(180deg);
 }
 
-.wave2 svg {
+.pointLeft svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 157px;
+    height: 49px;
+    transform: rotateY(180deg);
 }
 
-.wave2 .shape-fill {
-    fill: #F7770F;
+.pointLeft .shape-fill {
+    fill: #F8F0DF;
 }
+
+
 
 .blob-motion {
     position: absolute;
@@ -70,6 +80,6 @@ section {
   }
 
   .pink {
-    background: #ff0066;
+    background: #F8F0DF;
     overflow: hidden;
   }
