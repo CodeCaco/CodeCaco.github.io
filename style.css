@@ -13,6 +13,14 @@ section {
     padding: 100px 20vw;
 }
 
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+}
+
 .section1 {
     background-color: #F8F0DF;
 }
@@ -43,7 +51,7 @@ section {
 
 .pointLeft {
     position: absolute;
-    top: 0;
+    top: -0.04em;
     left: 0;
     width: 100%;
     overflow: hidden;
