@@ -21,6 +21,31 @@ footer {
     padding: 10px 10px;
 }
 
+ul {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin-top: -10px;
+    opacity: 75%;
+}
+
+li {
+    opacity: 100%;
+    margin: 1.3em;
+    list-style: none;
+}
+
+.a {
+    text-decoration: none;
+    color: black;
+    padding-right: 100px;
+    padding-left: 25px;
+}
+
+
 .section1 {
     background-color: #F8F0DF;
 }
@@ -91,3 +116,5 @@ footer {
     background: #F8F0DF;
     overflow: hidden;
   }
+
+  
