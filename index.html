@@ -9,8 +9,34 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/backpack.png"> 
     <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
-    <title>Document</title>
+    <title>Vasco Leitão</title>
+    <script>
+        const offsetAnchor = () => {
+        if (location.hash.length !== 0) {
+            window.scrollTo(window.scrollX, window.scrollY - 75);
+        }
+        }
+
+        const anchors = document.querySelectorAll('a[href^="#"]')
+
+        for (const a of anchors) {
+        a.addEventListener('click', (event) => {
+            window.setTimeout(() => {
+            offsetAnchor();
+            }, 0);
+        });
+        }
+
+        document.addEventListener('click', (event) => {
+        window.setTimeout(() => {
+            offsetAnchor();
+        }, 0);
+        });
+
+        window.setTimeout(offsetAnchor, 0);
+    </script>
 </head>
 <body>
     <nav>
@@ -23,15 +49,15 @@
     </nav>
     <section id="section1" class="section1">
       <div class="blob-content">
-        <h1>CodeCaco</h1>
-        <p>TestTestTest</p>
+        <h1>Vasco Leitão</h1>
+        <h4 style="color: rgb(105, 105, 105);">Computer Science Student at The University of Manchester</h4>
       </div>
       <svg
         class="blob-motion"
         id="visual"
         viewBox="0 0 960 540"
-        width="960"
-        height="540"
+        width="500"
+        height="500"
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
         version="1.1"

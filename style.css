@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Readex Pro', sans-serif;
-    color: #9D9D9D;
+    color: black;
     background-color: #F8F0DF;
 } 
 section {
@@ -105,6 +105,7 @@ li {
 
   .blob-content {
     z-index: 1;
+    text-align: center;
   }
 
   .blobs {
